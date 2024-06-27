@@ -1,0 +1,573 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --blue: #00b6d1;
+    --black: #222222
+}
+
+body {
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    flex: 1;
+    height: 97px;
+    max-width: 1210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 67px;
+}
+.nav .bi{
+    display: none;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.logo>img {
+    height: 56px;
+    width: 175px;
+}
+
+.nav ul {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: 28px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+.nav ul li:nth-child(5) {
+    padding: 0;
+}
+
+.hero {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 10px 0;
+    gap: 40px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.head h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.textArea p {
+    text-align: center;
+}
+
+.mainDownloadBtn {
+    background-color: var(--blue);
+    color: white;
+    padding: 14.5px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.releaseInfo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 32px;
+}
+
+.releaseInfo img {
+    height: 63px;
+    margin-right: 20px;
+}
+
+.releaseInfo span {
+    padding-bottom: 14px;
+}
+
+.releaseInfo small {
+    font-size: 14.4px !important;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 24px;
+    margin-top: 24px;
+    max-width: 960px;
+}
+
+.card {
+    padding: 20px 14px 10px;
+    background-color: #f9f9f9;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.card h3 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card button {
+    background-color: #5CB85c;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.langHead {
+    text-align: center;
+}
+
+.info {
+    background-color: #222222;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.join {
+    display: flex;
+    align-items: center;
+    width: 960px;
+    height: 340px;
+    padding: 24px 0;
+}
+
+.leftInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    max-width: 454px;
+    margin-right: 53px;
+}
+
+.leftInfo p {
+    line-height: 1.5em;
+}
+
+.leftInfo strong {
+    font-size: 24px;
+}
+
+.rightForm {
+    align-self: flex-start;
+}
+
+.rightForm form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 12px;
+    padding: 35px 40px;
+    margin: 0 54px 26px 54px;
+}
+
+.rightForm form h3 {
+    color: var(--blue);
+    font-size: 24px;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.rightForm form label {
+    font-size: 14.4px;
+    margin-bottom: 3.6px;
+    color: #222222;
+}
+
+.rightForm form input {
+    border: 1px solid lightgray;
+    height: 50px;
+    margin-bottom: 11.2px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.rightForm form input:focus {
+    outline: none;
+}
+
+.rightForm form button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 12px 11px;
+    cursor: pointer;
+    box-shadow: 0px 12px 18px -6px rgba(77, 170, 242, 0.37);
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    padding: 24px 0;
+}
+
+.faq h3 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+.faq p {
+    padding-bottom: 18px;
+}
+
+.faq a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 55px;
+    align-items: center;
+}
+
+.rows {
+    display: flex;
+    max-width: 960px;
+    padding: 24px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-right: 29px;
+    width: 218px;
+}
+
+.row h4 {
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+.row a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+    margin-top: 3px;
+    white-space: nowrap;
+}
+
+.rowFour {
+    margin-right: 0 !important;
+}
+
+.rowFour p {
+    margin-bottom: 8px;
+}
+
+.rowFour span {
+    font-size: 14px;
+}
+
+.rowFour form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rowFour input {
+    border: 1px solid lightgray;
+    padding: 10px 16px;
+    border-radius: 7px;
+}
+.rowFour input:focus{
+    outline: 4px solid rgba(0, 182, 209, .3);
+}
+
+.rowFour button {
+    background-color: var(--blue);
+    font-weight: bold;
+    color: white;
+    padding: 10px 25px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rowFour button:hover{
+    background-color: #00a1ba;
+}
+
+.foot {
+    width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.footLogo {
+    margin-right: 29px;
+    flex: 1;
+
+}
+
+.footLogo>img {
+    width: 157px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.bi {
+    font-size: 24px;
+    margin: 0 7px;
+    transition: transform .3s ease-in;
+}
+
+.bi:hover{
+    font-size: 26px;
+    color: #434343;
+}
+
+.social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.last {
+    width: 960px;
+}
+
+.copyright {
+    font-size: 12px;
+    align-self: flex-start;
+}
+
+.fixed{
+    background-color: #2d2d2d;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0px;
+    left: 8px;
+    padding: 10px 12px 8px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    transition: .3s ease-in;
+
+}
+
+.fixed:hover{
+    padding: 10px 12px 14px;
+}
+
+@media(max-width: 981px) {
+
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+        line-height: 1.5em;
+    }
+
+    .hero,
+    .grid,
+    .join,
+    .faq,
+    .rows,
+    .foot,
+    .last,
+    .cards,
+    .leftInfo,
+    .nav {
+        width: 90vw;
+    }
+
+    .navLinks{
+        position: absolute;
+        background: darkgray;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+     .navLinks ul{
+        display: flex;
+        flex-direction: column;
+     }
+     .navLinks ul li{
+        padding: 0;
+     }
+    .nav .bi{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navLinks li span{
+        display: none;
+    }
+
+    h1 {
+        font-size: 36px !important;
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    h3 {
+        font-size: 20px !important;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    small {
+        font-size: 12px !important;
+    }
+
+    span {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .exclude small {
+        font-size: 12px !important;
+    }
+
+    .langHead h3 {
+        font-weight: bold;
+    }
+
+    .faq h3 {
+        text-align: left;
+    }
+
+    .faq p {
+        font-size: 16px;
+    }
+
+    .leftInfo strong {
+        font-size: 20px !important;
+    }
+
+    .exclude {
+        text-align: left;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .join {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftInfo {
+        margin: 0 auto 16px auto
+    }
+
+    .rightForm {
+        align-self: center;
+    }
+
+    .rightForm form {
+        margin: 0;
+        width: 70vw;
+        padding: 30px 35px;
+    }
+
+    .rows {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .row {
+        margin-bottom: 36px;
+    }
+
+    .rowFour {
+        margin-bottom: 0 !important;
+        width: 100%
+    }
+
+    .foot {
+        flex-direction: column;
+    }
+
+    .footLogo {
+        margin-bottom: 24px;
+    }
+
+    .last {
+        text-align: center;
+    }
+}
